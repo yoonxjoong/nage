@@ -17,6 +17,28 @@
       padding: 20px;
       box-sizing: border-box;
       text-align: center;
+      position: relative;
+    }
+
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('bk_2.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1; /* 배경 이미지가 콘텐츠 뒤에 오도록 설정 */
+    }
+
+    .profile-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
     }
 
     .profile-image {
@@ -25,7 +47,7 @@
       border-radius: 50%;
       object-fit: cover;
       margin: 0 auto 20px;
-      border: 4px solid #4fc3f7;
+      /*border: 4px solid #4fc3f7;*/
       transition: transform 0.3s ease;
     }
 
@@ -36,7 +58,7 @@
     .profile-name {
       font-size: 24px;
       font-weight: bold;
-      color: white;
+      color: black;
       margin-bottom: 8px;
     }
 
@@ -104,6 +126,9 @@
   <title>나쥬 NAGE</title>
 </head>
 <body>
+
+<div class="background-image"></div> <!-- 배경 이미지 설정 -->
+
 <div class="profile-content">
   <img class="profile-image" src="https://cdn.litt.ly/images/WYt7NbdAdVJ82fA82VTj0LtU3KHCsgA7?s=600x600&amp;m=outside&amp;f=webp" alt="나쥬 이미지">
   <div class="profile-name">나쥬 NAGE</div>
@@ -120,10 +145,8 @@
     <a href="https://www.instagram.com/nageofficiel/" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-instagram"></i>
     </a>
-<!--    <a href="https://open.kakao.com/o/g8wUjWwb" target="_blank" rel="noopener noreferrer">-->
-<!--      <i class="fab fa-kakao"></i>-->
-<!--    </a>-->
   </div>
 </div>
+
 </body>
 </html>
