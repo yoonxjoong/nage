@@ -1,924 +1,129 @@
-<html lang="ko" style="--scrollbar-width: 0px;">
+<html lang="ko">
 <head>
   <meta charset="utf-8">
-  <style type="text/css">:root, :host {
-    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
-    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
-    --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
-    --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
-    --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
-    --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
-    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
-  }
-
-  svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
-    overflow: visible;
-    box-sizing: content-box;
-  }
-
-  .svg-inline--fa {
-    display: var(--fa-display, inline-block);
-    height: 1em;
-    overflow: visible;
-    vertical-align: -0.125em;
-  }
-
-  .svg-inline--fa.fa-2xs {
-    vertical-align: 0.1em;
-  }
-
-  .svg-inline--fa.fa-xs {
-    vertical-align: 0em;
-  }
-
-  .svg-inline--fa.fa-sm {
-    vertical-align: -0.0714285705em;
-  }
-
-  .svg-inline--fa.fa-lg {
-    vertical-align: -0.2em;
-  }
-
-  .svg-inline--fa.fa-xl {
-    vertical-align: -0.25em;
-  }
-
-  .svg-inline--fa.fa-2xl {
-    vertical-align: -0.3125em;
-  }
-
-  .svg-inline--fa.fa-pull-left {
-    margin-right: var(--fa-pull-margin, 0.3em);
-    width: auto;
-  }
-
-  .svg-inline--fa.fa-pull-right {
-    margin-left: var(--fa-pull-margin, 0.3em);
-    width: auto;
-  }
-
-  .svg-inline--fa.fa-li {
-    width: var(--fa-li-width, 2em);
-    top: 0.25em;
-  }
-
-  .svg-inline--fa.fa-fw {
-    width: var(--fa-fw-width, 1.25em);
-  }
-
-  .fa-layers svg.svg-inline--fa {
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .fa-layers-counter, .fa-layers-text {
-    display: inline-block;
-    position: absolute;
-    text-align: center;
-  }
-
-  .fa-layers {
-    display: inline-block;
-    height: 1em;
-    position: relative;
-    text-align: center;
-    vertical-align: -0.125em;
-    width: 1em;
-  }
-
-  .fa-layers svg.svg-inline--fa {
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-  }
-
-  .fa-layers-text {
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-  }
-
-  .fa-layers-counter {
-    background-color: var(--fa-counter-background-color, #ff253a);
-    border-radius: var(--fa-counter-border-radius, 1em);
-    box-sizing: border-box;
-    color: var(--fa-inverse, #fff);
-    line-height: var(--fa-counter-line-height, 1);
-    max-width: var(--fa-counter-max-width, 5em);
-    min-width: var(--fa-counter-min-width, 1.5em);
-    overflow: hidden;
-    padding: var(--fa-counter-padding, 0.25em 0.5em);
-    right: var(--fa-right, 0);
-    text-overflow: ellipsis;
-    top: var(--fa-top, 0);
-    -webkit-transform: scale(var(--fa-counter-scale, 0.25));
-    transform: scale(var(--fa-counter-scale, 0.25));
-    -webkit-transform-origin: top right;
-    transform-origin: top right;
-  }
-
-  .fa-layers-bottom-right {
-    bottom: var(--fa-bottom, 0);
-    right: var(--fa-right, 0);
-    top: auto;
-    -webkit-transform: scale(var(--fa-layers-scale, 0.25));
-    transform: scale(var(--fa-layers-scale, 0.25));
-    -webkit-transform-origin: bottom right;
-    transform-origin: bottom right;
-  }
-
-  .fa-layers-bottom-left {
-    bottom: var(--fa-bottom, 0);
-    left: var(--fa-left, 0);
-    right: auto;
-    top: auto;
-    -webkit-transform: scale(var(--fa-layers-scale, 0.25));
-    transform: scale(var(--fa-layers-scale, 0.25));
-    -webkit-transform-origin: bottom left;
-    transform-origin: bottom left;
-  }
-
-  .fa-layers-top-right {
-    top: var(--fa-top, 0);
-    right: var(--fa-right, 0);
-    -webkit-transform: scale(var(--fa-layers-scale, 0.25));
-    transform: scale(var(--fa-layers-scale, 0.25));
-    -webkit-transform-origin: top right;
-    transform-origin: top right;
-  }
-
-  .fa-layers-top-left {
-    left: var(--fa-left, 0);
-    right: auto;
-    top: var(--fa-top, 0);
-    -webkit-transform: scale(var(--fa-layers-scale, 0.25));
-    transform: scale(var(--fa-layers-scale, 0.25));
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-  }
-
-  .fa-1x {
-    font-size: 1em;
-  }
-
-  .fa-2x {
-    font-size: 2em;
-  }
-
-  .fa-3x {
-    font-size: 3em;
-  }
-
-  .fa-4x {
-    font-size: 4em;
-  }
-
-  .fa-5x {
-    font-size: 5em;
-  }
-
-  .fa-6x {
-    font-size: 6em;
-  }
-
-  .fa-7x {
-    font-size: 7em;
-  }
-
-  .fa-8x {
-    font-size: 8em;
-  }
-
-  .fa-9x {
-    font-size: 9em;
-  }
-
-  .fa-10x {
-    font-size: 10em;
-  }
-
-  .fa-2xs {
-    font-size: 0.625em;
-    line-height: 0.1em;
-    vertical-align: 0.225em;
-  }
-
-  .fa-xs {
-    font-size: 0.75em;
-    line-height: 0.0833333337em;
-    vertical-align: 0.125em;
-  }
-
-  .fa-sm {
-    font-size: 0.875em;
-    line-height: 0.0714285718em;
-    vertical-align: 0.0535714295em;
-  }
-
-  .fa-lg {
-    font-size: 1.25em;
-    line-height: 0.05em;
-    vertical-align: -0.075em;
-  }
-
-  .fa-xl {
-    font-size: 1.5em;
-    line-height: 0.0416666682em;
-    vertical-align: -0.125em;
-  }
-
-  .fa-2xl {
-    font-size: 2em;
-    line-height: 0.03125em;
-    vertical-align: -0.1875em;
-  }
-
-  .fa-fw {
-    text-align: center;
-    width: 1.25em;
-  }
-
-  .fa-ul {
-    list-style-type: none;
-    margin-left: var(--fa-li-margin, 2.5em);
-    padding-left: 0;
-  }
-
-  .fa-ul > li {
-    position: relative;
-  }
-
-  .fa-li {
-    left: calc(var(--fa-li-width, 2em) * -1);
-    position: absolute;
-    text-align: center;
-    width: var(--fa-li-width, 2em);
-    line-height: inherit;
-  }
-
-  .fa-border {
-    border-color: var(--fa-border-color, #eee);
-    border-radius: var(--fa-border-radius, 0.1em);
-    border-style: var(--fa-border-style, solid);
-    border-width: var(--fa-border-width, 0.08em);
-    padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
-  }
-
-  .fa-pull-left {
-    float: left;
-    margin-right: var(--fa-pull-margin, 0.3em);
-  }
-
-  .fa-pull-right {
-    float: right;
-    margin-left: var(--fa-pull-margin, 0.3em);
-  }
-
-  .fa-beat {
-    -webkit-animation-name: fa-beat;
-    animation-name: fa-beat;
-    -webkit-animation-delay: var(--fa-animation-delay, 0s);
-    animation-delay: var(--fa-animation-delay, 0s);
-    -webkit-animation-direction: var(--fa-animation-direction, normal);
-    animation-direction: var(--fa-animation-direction, normal);
-    -webkit-animation-duration: var(--fa-animation-duration, 1s);
-    animation-duration: var(--fa-animation-duration, 1s);
-    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
-    animation-timing-function: var(--fa-animation-timing, ease-in-out);
-  }
-
-  .fa-bounce {
-    -webkit-animation-name: fa-bounce;
-    animation-name: fa-bounce;
-    -webkit-animation-delay: var(--fa-animation-delay, 0s);
-    animation-delay: var(--fa-animation-delay, 0s);
-    -webkit-animation-direction: var(--fa-animation-direction, normal);
-    animation-direction: var(--fa-animation-direction, normal);
-    -webkit-animation-duration: var(--fa-animation-duration, 1s);
-    animation-duration: var(--fa-animation-duration, 1s);
-    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
-    animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
-  }
-
-  .fa-fade {
-    -webkit-animation-name: fa-fade;
-    animation-name: fa-fade;
-    -webkit-animation-delay: var(--fa-animation-delay, 0s);
-    animation-delay: var(--fa-animation-delay, 0s);
-    -webkit-animation-direction: var(--fa-animation-direction, normal);
-    animation-direction: var(--fa-animation-direction, normal);
-    -webkit-animation-duration: var(--fa-animation-duration, 1s);
-    animation-duration: var(--fa-animation-duration, 1s);
-    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
-    animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
-  }
-
-  .fa-beat-fade {
-    -webkit-animation-name: fa-beat-fade;
-    animation-name: fa-beat-fade;
-    -webkit-animation-delay: var(--fa-animation-delay, 0s);
-    animation-delay: var(--fa-animation-delay, 0s);
-    -webkit-animation-direction: var(--fa-animation-direction, normal);
-    animation-direction: var(--fa-animation-direction, normal);
-    -webkit-animation-duration: var(--fa-animation-duration, 1s);
-    animation-duration: var(--fa-animation-duration, 1s);
-    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
-    animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
-  }
-
-  .fa-flip {
-    -webkit-animation-name: fa-flip;
-    animation-name: fa-flip;
-    -webkit-animation-delay: var(--fa-animation-delay, 0s);
-    animation-delay: var(--fa-animation-delay, 0s);
-    -webkit-animation-direction: var(--fa-animation-direction, normal);
-    animation-direction: var(--fa-animation-direction, normal);
-    -webkit-animation-duration: var(--fa-animation-duration, 1s);
-    animation-duration: var(--fa-animation-duration, 1s);
-    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
-    animation-timing-function: var(--fa-animation-timing, ease-in-out);
-  }
-
-  .fa-shake {
-    -webkit-animation-name: fa-shake;
-    animation-name: fa-shake;
-    -webkit-animation-delay: var(--fa-animation-delay, 0s);
-    animation-delay: var(--fa-animation-delay, 0s);
-    -webkit-animation-direction: var(--fa-animation-direction, normal);
-    animation-direction: var(--fa-animation-direction, normal);
-    -webkit-animation-duration: var(--fa-animation-duration, 1s);
-    animation-duration: var(--fa-animation-duration, 1s);
-    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    -webkit-animation-timing-function: var(--fa-animation-timing, linear);
-    animation-timing-function: var(--fa-animation-timing, linear);
-  }
-
-  .fa-spin {
-    -webkit-animation-name: fa-spin;
-    animation-name: fa-spin;
-    -webkit-animation-delay: var(--fa-animation-delay, 0s);
-    animation-delay: var(--fa-animation-delay, 0s);
-    -webkit-animation-direction: var(--fa-animation-direction, normal);
-    animation-direction: var(--fa-animation-direction, normal);
-    -webkit-animation-duration: var(--fa-animation-duration, 2s);
-    animation-duration: var(--fa-animation-duration, 2s);
-    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    -webkit-animation-timing-function: var(--fa-animation-timing, linear);
-    animation-timing-function: var(--fa-animation-timing, linear);
-  }
-
-  .fa-spin-reverse {
-    --fa-animation-direction: reverse;
-  }
-
-  .fa-pulse,
-  .fa-spin-pulse {
-    -webkit-animation-name: fa-spin;
-    animation-name: fa-spin;
-    -webkit-animation-direction: var(--fa-animation-direction, normal);
-    animation-direction: var(--fa-animation-direction, normal);
-    -webkit-animation-duration: var(--fa-animation-duration, 1s);
-    animation-duration: var(--fa-animation-duration, 1s);
-    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
-    -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
-    animation-timing-function: var(--fa-animation-timing, steps(8));
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .fa-beat,
-    .fa-bounce,
-    .fa-fade,
-    .fa-beat-fade,
-    .fa-flip,
-    .fa-pulse,
-    .fa-shake,
-    .fa-spin,
-    .fa-spin-pulse {
-      -webkit-animation-delay: -1ms;
-      animation-delay: -1ms;
-      -webkit-animation-duration: 1ms;
-      animation-duration: 1ms;
-      -webkit-animation-iteration-count: 1;
-      animation-iteration-count: 1;
-      transition-delay: 0s;
-      transition-duration: 0s;
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome CDN 추가 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #4fc3f7, #81d4fa);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
     }
-  }
 
-  @-webkit-keyframes fa-beat {
-    0%, 90% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
+    .profile-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 20px;
+      border: 4px solid #4fc3f7;
+      transition: transform 0.3s ease;
     }
-    45% {
-      -webkit-transform: scale(var(--fa-beat-scale, 1.25));
-      transform: scale(var(--fa-beat-scale, 1.25));
-    }
-  }
 
-  @keyframes fa-beat {
-    0%, 90% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
+    .profile-image:hover {
+      transform: scale(1.1);
     }
-    45% {
-      -webkit-transform: scale(var(--fa-beat-scale, 1.25));
-      transform: scale(var(--fa-beat-scale, 1.25));
-    }
-  }
 
-  @-webkit-keyframes fa-bounce {
-    0% {
-      -webkit-transform: scale(1, 1) translateY(0);
-      transform: scale(1, 1) translateY(0);
+    .profile-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 8px;
     }
-    10% {
-      -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
-      transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
-    }
-    30% {
-      -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
-      transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
-    }
-    50% {
-      -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
-      transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
-    }
-    57% {
-      -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
-      transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
-    }
-    64% {
-      -webkit-transform: scale(1, 1) translateY(0);
-      transform: scale(1, 1) translateY(0);
-    }
-    100% {
-      -webkit-transform: scale(1, 1) translateY(0);
-      transform: scale(1, 1) translateY(0);
-    }
-  }
 
-  @keyframes fa-bounce {
-    0% {
-      -webkit-transform: scale(1, 1) translateY(0);
-      transform: scale(1, 1) translateY(0);
+    .profile-description {
+      font-size: 14px;
+      color: white;
+      margin-bottom: 20px;
     }
-    10% {
-      -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
-      transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
-    }
-    30% {
-      -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
-      transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
-    }
-    50% {
-      -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
-      transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
-    }
-    57% {
-      -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
-      transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
-    }
-    64% {
-      -webkit-transform: scale(1, 1) translateY(0);
-      transform: scale(1, 1) translateY(0);
-    }
-    100% {
-      -webkit-transform: scale(1, 1) translateY(0);
-      transform: scale(1, 1) translateY(0);
-    }
-  }
 
-  @-webkit-keyframes fa-fade {
-    50% {
-      opacity: var(--fa-fade-opacity, 0.4);
+    .button-container {
+      margin-top: 20px;
     }
-  }
 
-  @keyframes fa-fade {
-    50% {
-      opacity: var(--fa-fade-opacity, 0.4);
+    .button-container a {
+      display: block;
+      background: #fff;
+      color: black;
+      text-align: center;
+      padding: 14px;
+      border-radius: 30px;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
-  }
 
-  @-webkit-keyframes fa-beat-fade {
-    0%, 100% {
-      opacity: var(--fa-beat-fade-opacity, 0.4);
-      -webkit-transform: scale(1);
-      transform: scale(1);
+    .button-container a:active {
+      transform: translateY(1px);
     }
-    50% {
-      opacity: 1;
-      -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
-      transform: scale(var(--fa-beat-fade-scale, 1.125));
-    }
-  }
 
-  @keyframes fa-beat-fade {
-    0%, 100% {
-      opacity: var(--fa-beat-fade-opacity, 0.4);
-      -webkit-transform: scale(1);
-      transform: scale(1);
+    .social-links {
+      margin-top: 20px;
     }
-    50% {
-      opacity: 1;
-      -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
-      transform: scale(var(--fa-beat-fade-scale, 1.125));
+
+    .social-links a {
+      font-size: 24px;
+      color: white;
+      margin: 0 15px;
+      transition: transform 0.3s ease;
     }
-  }
 
-  @-webkit-keyframes fa-flip {
-    50% {
-      -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
-      transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+    .social-links a:hover {
+      transform: scale(1.2);
     }
-  }
 
-  @keyframes fa-flip {
-    50% {
-      -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
-      transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+    @media (max-width: 600px) {
+      .profile-name {
+        font-size: 22px;
+      }
+
+      .profile-description {
+        font-size: 12px;
+      }
+
+      .button-container a {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .social-links a {
+        font-size: 20px;
+      }
     }
-  }
-
-  @-webkit-keyframes fa-shake {
-    0% {
-      -webkit-transform: rotate(-15deg);
-      transform: rotate(-15deg);
-    }
-    4% {
-      -webkit-transform: rotate(15deg);
-      transform: rotate(15deg);
-    }
-    8%, 24% {
-      -webkit-transform: rotate(-18deg);
-      transform: rotate(-18deg);
-    }
-    12%, 28% {
-      -webkit-transform: rotate(18deg);
-      transform: rotate(18deg);
-    }
-    16% {
-      -webkit-transform: rotate(-22deg);
-      transform: rotate(-22deg);
-    }
-    20% {
-      -webkit-transform: rotate(22deg);
-      transform: rotate(22deg);
-    }
-    32% {
-      -webkit-transform: rotate(-12deg);
-      transform: rotate(-12deg);
-    }
-    36% {
-      -webkit-transform: rotate(12deg);
-      transform: rotate(12deg);
-    }
-    40%, 100% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-  }
-
-  @keyframes fa-shake {
-    0% {
-      -webkit-transform: rotate(-15deg);
-      transform: rotate(-15deg);
-    }
-    4% {
-      -webkit-transform: rotate(15deg);
-      transform: rotate(15deg);
-    }
-    8%, 24% {
-      -webkit-transform: rotate(-18deg);
-      transform: rotate(-18deg);
-    }
-    12%, 28% {
-      -webkit-transform: rotate(18deg);
-      transform: rotate(18deg);
-    }
-    16% {
-      -webkit-transform: rotate(-22deg);
-      transform: rotate(-22deg);
-    }
-    20% {
-      -webkit-transform: rotate(22deg);
-      transform: rotate(22deg);
-    }
-    32% {
-      -webkit-transform: rotate(-12deg);
-      transform: rotate(-12deg);
-    }
-    36% {
-      -webkit-transform: rotate(12deg);
-      transform: rotate(12deg);
-    }
-    40%, 100% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-  }
-
-  @-webkit-keyframes fa-spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-
-  @keyframes fa-spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-
-  .fa-rotate-90 {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
-
-  .fa-rotate-180 {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-
-  .fa-rotate-270 {
-    -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
-  }
-
-  .fa-flip-horizontal {
-    -webkit-transform: scale(-1, 1);
-    transform: scale(-1, 1);
-  }
-
-  .fa-flip-vertical {
-    -webkit-transform: scale(1, -1);
-    transform: scale(1, -1);
-  }
-
-  .fa-flip-both,
-  .fa-flip-horizontal.fa-flip-vertical {
-    -webkit-transform: scale(-1, -1);
-    transform: scale(-1, -1);
-  }
-
-  .fa-rotate-by {
-    -webkit-transform: rotate(var(--fa-rotate-angle, none));
-    transform: rotate(var(--fa-rotate-angle, none));
-  }
-
-  .fa-stack {
-    display: inline-block;
-    vertical-align: middle;
-    height: 2em;
-    position: relative;
-    width: 2.5em;
-  }
-
-  .fa-stack-1x,
-  .fa-stack-2x {
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: var(--fa-stack-z-index, auto);
-  }
-
-  .svg-inline--fa.fa-stack-1x {
-    height: 1em;
-    width: 1.25em;
-  }
-
-  .svg-inline--fa.fa-stack-2x {
-    height: 2em;
-    width: 2.5em;
-  }
-
-  .fa-inverse {
-    color: var(--fa-inverse, #fff);
-  }
-
-  .sr-only,
-  .fa-sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-  }
-
-  .sr-only-focusable:not(:focus),
-  .fa-sr-only-focusable:not(:focus) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-  }
-
-  .svg-inline--fa .fa-primary {
-    fill: var(--fa-primary-color, currentColor);
-    opacity: var(--fa-primary-opacity, 1);
-  }
-
-  .svg-inline--fa .fa-secondary {
-    fill: var(--fa-secondary-color, currentColor);
-    opacity: var(--fa-secondary-opacity, 0.4);
-  }
-
-  .svg-inline--fa.fa-swap-opacity .fa-primary {
-    opacity: var(--fa-secondary-opacity, 0.4);
-  }
-
-  .svg-inline--fa.fa-swap-opacity .fa-secondary {
-    opacity: var(--fa-primary-opacity, 1);
-  }
-
-  .svg-inline--fa mask .fa-primary,
-  .svg-inline--fa mask .fa-secondary {
-    fill: black;
-  }
-
-  .fad.fa-inverse,
-  .fa-duotone.fa-inverse {
-    color: var(--fa-inverse, #fff);
-  }</style>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://cdn.litt.ly/assets/fonts/SUIT/SUIT.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PPXM379"></script>
-  <script src="https://unpkg.com/share-api-polyfill/dist/share-min.js"></script>
-  <script>!function (e, t, a, n, g) {
-    e[n] = e[n] || [], e[n].push({"gtm.start": (new Date).getTime(), event: "gtm.js"});
-    var m = t.getElementsByTagName(a)[0], r = t.createElement(a);
-    r.async = !0, r.src = "https://www.googletagmanager.com/gtm.js?id=GTM-PPXM379", m.parentNode.insertBefore(
-        r, m)
-  }(window, document, "script", "dataLayer")</script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="https://cpay.payple.kr/js/cpay.payple.1.0.1.js"></script>
-  <script type="text/javascript" src="https://gpay.payple.kr/common/js/gpay-1.0.1.js"></script>
-  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  </style>
   <title>나쥬 NAGE</title>
-  <meta name="description" content="물속에서 더욱 더 빛나는 나쥬의 가치를 경험해보세요.">
-  <meta name="theme-color" content="#F5F5F8">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://litt.ly/nageofficial">
-  <meta property="og:title" content="나쥬 NAGE">
-  <meta property="og:description" content="물속에서 더욱 더 빛나는 나쥬의 가치를 경험해보세요.">
-  <meta property="og:image"
-        content="https://cdn.litt.ly/images/WYt7NbdAdVJ82fA82VTj0LtU3KHCsgA7?s=1200x630&amp;m=inside">
-  <meta property="og:site_name" content="나쥬 NAGE">
-  <link rel="icon"
-        href="https://cdn.litt.ly/images/WYt7NbdAdVJ82fA82VTj0LtU3KHCsgA7?s=32x32&amp;noanim"
-        sizes="any">
-  <link rel="apple-touch-icon"
-        href="https://cdn.litt.ly/images/WYt7NbdAdVJ82fA82VTj0LtU3KHCsgA7?s=180x180&amp;noanim">
-  <link rel="manifest" href="/nageofficial/manifest.json">
-  <link rel="canonical" href="https://litt.ly/nageofficial">
-  <script id="data" type="text/plain">
-    eyJ0aGVtZSI6eyJmb250Ijp7ImZhbWlseSI6ImRlZmF1bHQifSwibG9nbyI6eyJ0eXBlIjoiZGVmYXVsdCIsImltYWdlIjpudWxsLCJwb3NpdGlvbiI6ImJvdHRvbSJ9LCJidXR0b25Db2xvciI6IiMwMDAwMDAiLCJidXR0b25TaGFwZSI6ImZ1bGx5Um91bmRlZCIsImJ1dHRvbkVmZmVjdCI6IndhdmUiLCJiYWNrZ3JvdW5kQ29sb3IiOiIjRjVGNUY4IiwiYmFja2dyb3VuZEltYWdlIjpudWxsLCJidXR0b25Db2xvckxheW91dCI6ImRlZmF1bHQiLCJjdXN0b21CdXR0b25Db2xvciI6bnVsbCwic2F2ZWRCdXR0b25Db2xvcnMiOnsiY3VzdG9tIjoiI0FENzg0NCIsIiNEREYyRTEiOiIjMDAwMDAwIiwiI0Y1RjVGOCI6IiMwMDAwMDAiLCIjRkJFRkVBIjoiI0ZGRDFEMSJ9LCJiYWNrZ3JvdW5kSW1hZ2VGaWx0ZXIiOiJkYXJrIiwiY3VzdG9tQmFja2dyb3VuZENvbG9yIjoiI0M0Q0ZDMCIsImN1c3RvbUJhY2tncm91bmRJbWFnZSI6eyJ1cmwiOiIvaW1hZ2VzL1I5dXo2VnkxY0loSERHNXgzc3FON211djZMYUxQTjhMIiwibWVkaWFJZCI6MTI3MzE0OX19LCJibG9ja3MiOlt7ImtleSI6ImhLVXBqVkEiLCJ1cmwiOiJodHRwczovL25hZ2VvZmZpY2lhbC5jb20vIiwidXNlIjp0cnVlLCJmb3JtIjoibGFyZ2VDYXJkIiwidHlwZSI6ImxpbmsiLCJpbWFnZSI6bnVsbCwidGl0bGUiOiLrgpjspawg6rO17IudIO2ZiO2OmOydtOyngCIsImZvbGRlZCI6ZmFsc2UsImVtcGhhc2l6ZWQiOmZhbHNlLCJyZXNlcnZhdGlvbiI6eyJvcGVuQXQiOm51bGwsImNsb3NlQXQiOm51bGx9fV0sInNlY3JldCI6eyJib2R5IjoiIiwiaW1hZ2UiOm51bGwsImVuYWJsZWQiOmZhbHNlfSwicHJvZmlsZSI6eyJ1c2UiOnRydWUsImZvbnQiOnsic2l6ZSI6Im5vcm1hbCJ9LCJpbWFnZSI6eyJ1cmwiOiIvaW1hZ2VzL1dZdDdOYmRBZFZKODJmQTgyVlRqMEx0VTNLSENzZ0E3IiwibWVkaWFJZCI6MTI3MzEzOH0sInRpdGxlIjoi64KY7KWsIE5BR0UiLCJmb2xkZWQiOnRydWUsImxheW91dCI6InBvcnRyYWl0Iiwic3VidGl0bGUiOiLrrLzsho3sl5DshJwg642U7JqxIOuNlCDruZvrgpjripQg64KY7KWs7J2YIOqwgOy5mOulvCDqsr3tl5jtlbTrs7TshLjsmpQuIiwiYmFja2dyb3VuZEltYWdlIjpudWxsLCJzdWJzY3JpcHRpb25GaWVsZHMiOnsiZW1haWwiOnRydWUsInBob25lIjpmYWxzZX19LCJjZXJ0aWZpY2F0ZWQiOmZhbHNlLCJjZG5Qcm9maWxlSW1hZ2VVcmwiOiJodHRwczovL2Nkbi5saXR0Lmx5L2ltYWdlcy9XWXQ3TmJkQWRWSjgyZkE4MlZUajBMdFUzS0hDc2dBNyIsImFsZXJ0IjpmYWxzZSwiYWxpYXMiOiJuYWdlb2ZmaWNpYWwifQ==
-  </script>
-  <style>body {
-    background-color: #F5F5F8
-  }</style>
-  <script defer="defer"
-          src="https://public.litt.ly/FoO6RPFcwX8VagtvnbgogZ30CqbPv0ss/static/js/main.e5ed5ef0.js"></script>
-  <link href="https://public.litt.ly/FoO6RPFcwX8VagtvnbgogZ30CqbPv0ss/static/css/main.bd23a4b7.css"
-        rel="stylesheet">
 </head>
-<body class="" style="overflow: unset; touch-action: unset;">
-<noscript>You need to enable JavaScript to run this app.</noscript>
-<noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPXM379" height="0" width="0"
-          style="display:none;visibility:hidden"></iframe>
-</noscript>
-<div id="root">
-  <div
-      style="--background-color: #F5F5F8; --background-text-color: #000000; --button-color: #000000; --button-text-color: #FFFFFF; --shadow-color: rgba(23, 29, 46, 0.08); --block-background-color: #FFFFFF; --block-text-color: #000000; --block-text-color--unchecked: #8D929F; --block-shape: 30px; --button-shape: 30px; --user-font-family: SUIT,sans-serif;">
-    <div class="bg-var-background-color">
-      <div class="fixed inset-0 z-[-1] bg-cover bg-top"></div>
-      <div class="m-auto flex min-h-screen max-w-[445px] flex-col">
-        <div class="relative flex h-full flex-1 flex-col">
-          <div class="w-full p-[20px] absolute z-20">
-            <div class="flex w-full items-center justify-between">
-              <button
-                  class="group/button relative isolate flex shrink-0 items-center justify-center overflow-hidden px-[14px] active:enabled:scale-[0.98] h-[38px] rounded-full text-13 font-semibold bg-white disabled:text-gray3/[0.3] text-gray4">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis"
-                     class="svg-inline--fa fa-ellipsis text-[14px]" role="img"
-                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path fill="currentColor"
-                        d="M120 256c0 30.9-25.1 56-56 56s-56-25.1-56-56s25.1-56 56-56s56 25.1 56 56zm160 0c0 30.9-25.1 56-56 56s-56-25.1-56-56s25.1-56 56-56s56 25.1 56 56zm104 56c-30.9 0-56-25.1-56-56s25.1-56 56-56s56 25.1 56 56s-25.1 56-56 56z"></path>
-                </svg>
-                <div
-                    class="absolute inset-0 group-disabled/button:hidden group-hover/button:bg-black/[0.1]"></div>
-              </button>
-              <button
-                  class="group/button relative isolate flex shrink-0 items-center justify-center overflow-hidden px-[14px] active:enabled:scale-[0.98] h-[38px] rounded-full text-13 bg-white disabled:text-gray3/[0.3] max-w-[86px] font-medium hover:text-gray4 disabled:text-gray4 text-black">
-                <div class="flex h-[35px] items-center space-x-[4px]">
-                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bell"
-                       class="svg-inline--fa fa-bell " role="img" xmlns="http://www.w3.org/2000/svg"
-                       viewBox="0 0 448 512">
-                    <path fill="currentColor"
-                          d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"></path>
-                  </svg>
-                </div>
-                <div
-                    class="absolute inset-0 group-disabled/button:hidden group-hover/button:bg-black/[0.1]"></div>
-              </button>
-            </div>
-          </div>
-          <div class="flex flex-col items-center font-var-user-font space-y-0">
-<!--            <div class="relative flex w-full justify-center">-->
-<!--              <div class="mb-[10px] h-[375px] w-full dt:h-[405px]"><img-->
-<!--                  class="h-full w-full object-cover object-top"-->
-<!--                  src="https://cdn.litt.ly/images/WYt7NbdAdVJ82fA82VTj0LtU3KHCsgA7?s=600x600&amp;m=outside&amp;f=webp"-->
-<!--                  srcset="https://cdn.litt.ly/images/WYt7NbdAdVJ82fA82VTj0LtU3KHCsgA7?s=600x600&amp;m=outside&amp;f=webp 1x, https://cdn.litt.ly/images/WYt7NbdAdVJ82fA82VTj0LtU3KHCsgA7?s=1200x1200&amp;m=outside&amp;f=webp 2x"-->
-<!--                  style="mask-image: linear-gradient(rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));"></div>-->
-<!--            </div>-->
-            <div
-                class="flex flex-col items-center space-y-[11px] px-[20px] text-var-background-text-color">
-              <div class="break-all"><h1 class="text-20 font-semibold leading-[32px] inline">나쥬
-                NAGE</h1></div>
-              <div class="break-all"><h2
-                  class="inline whitespace-pre-wrap break-all text-center text-16 font-semibold">
-                물속에서 더욱 더 빛나는 나쥬의 가치를 경험해보세요.</h2></div>
-            </div>
-          </div>
-          <div class="flex flex-col">
-            <div class="flex flex-col space-y-[16px] px-[20px] text-var-block-text-color pt-[20px]">
-              <div>
-                <a
-                  class="block w-full cursor-pointer overflow-hidden rounded-var-block-shape bg-var-block-background-color shadow-view-block wave"
-                  rel="noopener" href="https://nageofficial.com/">
-                <div class="flex items-center justify-center p-[15px]"><h2
-                    class="flex-1 whitespace-pre-wrap break-all text-center font-var-user-font text-16 font-medium">
-                  나쥬 공식 홈페이지</h2></div>
-                <span class="wave-inner"><span class="wave-blobs"><span
-                    class="wave-blob"></span><span class="wave-blob"></span><span
-                    class="wave-blob"></span><span class="wave-blob"></span></span></span>
-                </a>
-              </div>
-              <div>
-                <a
-                    class="block w-full cursor-pointer overflow-hidden rounded-var-block-shape bg-var-block-background-color shadow-view-block wave"
-                    rel="noopener" href="https://nageofficial.com/">
-                  <div class="flex items-center justify-center p-[15px]"><h2
-                      class="flex-1 whitespace-pre-wrap break-all text-center font-var-user-font text-16 font-medium">
-                    나쥬 네이버 스마트스토어</h2></div>
-                  <span class="wave-inner"><span class="wave-blobs"><span
-                      class="wave-blob"></span><span class="wave-blob"></span><span
-                      class="wave-blob"></span><span class="wave-blob"></span></span></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<body>
+<div class="profile-content">
+  <img class="profile-image" src="https://cdn.litt.ly/images/WYt7NbdAdVJ82fA82VTj0LtU3KHCsgA7?s=600x600&amp;m=outside&amp;f=webp" alt="나쥬 이미지">
+  <div class="profile-name">나쥬 NAGE</div>
+  <div class="profile-description">물속에서 더욱 더 빛나는 나쥬의 가치를 경험해보세요.</div>
+  <div class="button-container">
+    <a href="https://nageofficial.com/" target="_blank" rel="noopener noreferrer">나쥬 공식몰</a>
+  </div>
+  <div class="button-container">
+    <a href="https://smartstore.naver.com/nageofficial" target="_blank" rel="noopener noreferrer">나쥬 스마트스토어</a>
+  </div>
+
+  <!-- 소셜 미디어 아이콘 추가 -->
+  <div class="social-links">
+    <a href="https://www.instagram.com/nageofficiel/" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-instagram"></i>
+    </a>
+<!--    <a href="https://open.kakao.com/o/g8wUjWwb" target="_blank" rel="noopener noreferrer">-->
+<!--      <i class="fab fa-kakao"></i>-->
+<!--    </a>-->
   </div>
 </div>
-<div class="ReactModalPortal"></div>
-<div aria-hidden="true" role="presentation"
-     style="width: 99px; height: 99px; overflow: scroll; position: absolute; top: -9999px;"></div>
 </body>
 </html>
