@@ -9,7 +9,8 @@
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #4fc3f7, #81d4fa);
+      background: url('bk_2.jpeg') no-repeat center center fixed; /* 배경 이미지 추가 */
+      background-size: cover; /* 이미지 크기 조정 */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -17,28 +18,19 @@
       padding: 20px;
       box-sizing: border-box;
       text-align: center;
-      position: relative;
+      position: relative; /* 자식 요소들이 배경 위에 오도록 설정 */
     }
 
-    .background-image {
+    /* 배경 이미지 위에 어두운 오버레이 추가 */
+    body::before {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('bk_2.jpeg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      z-index: -1; /* 배경 이미지가 콘텐츠 뒤에 오도록 설정 */
-    }
-
-    .profile-content {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      max-width: 400px;
-      width: 100%;
+      background: rgba(0, 0, 0, 0.5); /* 어두운 투명도 */
+      z-index: -1; /* 배경보다 뒤에 배치 */
     }
 
     .profile-image {
@@ -58,7 +50,7 @@
     .profile-name {
       font-size: 24px;
       font-weight: bold;
-      color: black;
+      color: white;
       margin-bottom: 8px;
     }
 
@@ -126,9 +118,6 @@
   <title>나쥬 NAGE</title>
 </head>
 <body>
-
-<div class="background-image"></div> <!-- 배경 이미지 설정 -->
-
 <div class="profile-content">
   <img class="profile-image" src="https://cdn.litt.ly/images/WYt7NbdAdVJ82fA82VTj0LtU3KHCsgA7?s=600x600&amp;m=outside&amp;f=webp" alt="나쥬 이미지">
   <div class="profile-name">나쥬 NAGE</div>
@@ -147,6 +136,5 @@
     </a>
   </div>
 </div>
-
 </body>
 </html>
