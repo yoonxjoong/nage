@@ -2,23 +2,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Font Awesome CDN 추가 -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
-      background: url('bk_2.jpeg') no-repeat center center fixed; /* 배경 이미지 추가 */
-      background-size: cover; /* 이미지 크기 조정 */
+      background: url('bk_2.jpeg') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      padding: 20px;
       box-sizing: border-box;
       text-align: center;
-      position: relative; /* 자식 요소들이 배경 위에 오도록 설정 */
+      position: relative;
+      padding: 20px;
     }
 
     /* 배경 이미지 위에 어두운 오버레이 추가 */
@@ -33,13 +32,18 @@
       z-index: -1; /* 배경보다 뒤에 배치 */
     }
 
+    .profile-content {
+      width: 80%; /* 화면 너비의 80% */
+      max-width: 600px; /* 최대 600px */
+      padding: 20px;
+    }
+
     .profile-image {
       width: 120px;
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
       margin: 0 auto 20px;
-      /*border: 4px solid #4fc3f7;*/
       transition: transform 0.3s ease;
     }
 
@@ -128,8 +132,6 @@
   <div class="button-container">
     <a href="https://smartstore.naver.com/nageofficial" target="_blank" rel="noopener noreferrer">나쥬 스마트스토어</a>
   </div>
-
-  <!-- 소셜 미디어 아이콘 추가 -->
   <div class="social-links">
     <a href="https://www.instagram.com/nageofficiel/" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-instagram"></i>
