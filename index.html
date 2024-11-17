@@ -1,1 +1,96 @@
-testesttest
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나쥬 브랜드 프로필</title>
+    <style>
+        /* 전체 스타일 */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #222;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            margin: 10px 0 30px;
+            line-height: 1.6;
+        }
+
+        /* 버튼 스타일 */
+        .button {
+            display: block;
+            padding: 14px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+        }
+        .button.shop {
+            background-color: #0056a3;
+        }
+        .button.shop:hover {
+            background-color: #004080;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 86, 163, 0.3);
+        }
+        .button.smartstore {
+            background-color: #00b894;
+        }
+        .button.smartstore:hover {
+            background-color: #009879;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 184, 148, 0.3);
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .button {
+                font-size: 14px;
+                padding: 12px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>나쥬 브랜드 프로필</h1>
+        <p>물속에서 더욱 더 빛나는 나쥬의 가치를 경험해 보세요.<br>여러분과 함께 헤엄쳐 나아가는 나쥬가 되겠습니다.</p>
+        <!-- 쇼핑몰 페이지로 이동 -->
+        <a href="https://your-shoppingmall-url.com" class="button shop">쇼핑몰 바로가기</a>
+        <!-- 네이버 스마트스토어로 이동 -->
+        <a href="https://smartstore.naver.com/your-smartstore-id" class="button smartstore">네이버 스마트스토어 바로가기</a>
+    </div>
+</body>
+</html>
